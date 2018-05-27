@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'my_button.dart';
 
-// Firebase
+/*
+* This is the first page a signed in user sees when opening the app.
+* It has two big buttons, 1) letting user to choose whether to deliver food for others
+* or 2) looking for available delivery services.
+*/
 
 
 class UserHomePage extends StatefulWidget {
