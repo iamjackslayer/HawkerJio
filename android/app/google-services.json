@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "499283099994",
+    "firebase_url": "https://hawkerjio.firebaseio.com",
+    "project_id": "hawkerjio",
+    "storage_bucket": "hawkerjio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499283099994:android:6d166e50b8744617",
+        "android_client_info": {
+          "package_name": "com.leet.hawkerjioapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499283099994-k58g5ko2drftdvflrih2n4h60n1laaod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leet.hawkerjioapp",
+            "certificate_hash": "16b9c910e1ff09f4f08080ddfefd66a192e7dd16"
+          }
+        },
+        {
+          "client_id": "499283099994-064nlihr477hs9ms7ibtej8bb0m5lpmv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "499283099994-064nlihr477hs9ms7ibtej8bb0m5lpmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa2TkcOGtvpgIIZapBba-FquUqMC-7hfY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499283099994-064nlihr477hs9ms7ibtej8bb0m5lpmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
