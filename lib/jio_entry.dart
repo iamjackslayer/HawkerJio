@@ -13,7 +13,6 @@ class JioEntry {
   String pickupPoint;
   String hawkerName;
   String jioCreator;
-	String remarks;
   DateTime closingTime;
   DateTime eta;
 
