@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'delivering_from_layout.dart';
+import 'order_layout.dart';
 
 /*
 * This is the first page a signed in user sees when opening the app.
@@ -24,12 +25,14 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
     super.initState();
     _orderButtonColor = Colors.pink;
     _deliverButtonColor = Colors.white;
+
+    _centerLayout = new OrderLayout();
   }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.grey,
       body: new Center(
               child: new Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -46,67 +49,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                         ),
 
                         // The center layout when orderbutton is selected.
-                        new Container(
-                          margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 10.0),
-                          decoration: new BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: new BorderRadius.all(const Radius.circular(20.0)),
-                          ),
-
-                          child: new Row(
-                            children: <Widget>[
-                              new Column(
-                                children: <Widget>[
-                                  new Padding(
-                                    padding: new EdgeInsets.fromLTRB(15.0, 5.0, 10.0, 0.0),
-                                    child:new Icon(Icons.free_breakfast),
-                                  ),
-                                  new Padding(
-                                    padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 0.0),
-                                    child:new Icon(Icons.more_vert),
-                                  ),
-                                  new Padding(
-                                    padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 5.0),
-                                    child:new Icon(Icons.free_breakfast),
-                                  ),
-                                ],
-                              ),
-                              new Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: <Widget>[
-                                  new Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: <Widget>[
-                                      new Text("From: ",
-                                        style: new TextStyle(
-                                          fontSize: 17.0,
-                                          fontWeight: FontWeight.bold
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  // This is horizontal divider
-                                  new Container(
-                                    margin: new EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
-                                    width: 220.0,
-                                    height: 2.0,
-                                    color: Colors.black12,
-                                  ),
-                                  new Row(
-                                    children: <Widget>[
-                                      new Text("To:",
-                                          style: new TextStyle(
-                                              fontSize: 17.0,
-                                              fontWeight: FontWeight.bold
-                                          )
-                                      )
-                                    ],
-                                  )
-                                ],
-                              )
-                            ],
-                          )
-                        ),
+                        _centerLayout,
 
 
                       // This row contains two radio buttons "order" and "deliver"
@@ -125,6 +68,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                                 setState(() {
                                   _orderButtonColor = Colors.pink;
                                   _deliverButtonColor = Colors.white;
+                                  _centerLayout = new OrderLayout();
                                 });
                               },
                             ),
@@ -150,6 +94,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                                 setState(() {
                                   _deliverButtonColor = Colors.pink;
                                   _orderButtonColor = Colors.white;
+                                  _centerLayout = new DeliveringFromLayout();
 
                                 });
                               },

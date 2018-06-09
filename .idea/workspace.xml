@@ -8,21 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14f078c1-8783-416a-93cc-e4ef96310735" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.vscode/settings.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ios/.symlinks/flutter" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/cloud_firestore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/firebase_core" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ios/Podfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ios/Podfile.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/delivering_from_layout.dart" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/order_layout.dart" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" />
-      <change beforePath="$PROJECT_DIR$/lib/jio_list_page.dart" afterPath="$PROJECT_DIR$/lib/jio_list_page.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/delivering_from_layout.dart" afterPath="$PROJECT_DIR$/lib/delivering_from_layout.dart" />
       <change beforePath="$PROJECT_DIR$/lib/user_home_page.dart" afterPath="$PROJECT_DIR$/lib/user_home_page.dart" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -50,8 +39,30 @@
       <file leaf-file-name="user_home_page.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/user_home_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="63" column="46" lean-forward="false" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+            <state relative-caret-position="-84">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_layout.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/order_layout.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2730">
+              <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delivering_from_layout.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/delivering_from_layout.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -123,16 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="date_picker.dart" pinned="false" current-in-tab="false">
-        <entry file="file://C:/flutter/packages/flutter/lib/src/material/date_picker.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42546">
-              <caret line="1036" column="74" lean-forward="false" selection-start-line="1036" selection-start-column="74" selection-end-line="1036" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -187,6 +188,7 @@
         <option value="C:/flutter/packages/flutter/lib/src/material/time.dart" />
         <option value="$PROJECT_DIR$/lib/create_jio_page.dart" />
         <option value="$PROJECT_DIR$/lib/welcome_page.dart" />
+        <option value="$PROJECT_DIR$/lib/order_layout.dart" />
         <option value="$PROJECT_DIR$/lib/delivering_from_layout.dart" />
         <option value="$PROJECT_DIR$/lib/user_home_page.dart" />
       </list>
@@ -222,6 +224,11 @@
             <path>
               <item name="hawker_jio_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="hawker_jio_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hawker_jio_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hawker_jio_app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hawker_jio_app" type="b2602c69:ProjectViewProjectNode" />
@@ -370,6 +377,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1832" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.49870467" order="6" side_tool="false" content_ui="tabs" />
@@ -377,11 +385,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27066666" sideWeight="0.51295334" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25866666" sideWeight="0.5103627" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16266666" sideWeight="0.48834196" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25866666" sideWeight="0.49222797" order="2" side_tool="false" content_ui="tabs" x="0" y="56" width="3200" height="1744" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25866666" sideWeight="0.48963732" order="2" side_tool="false" content_ui="tabs" x="0" y="56" width="3200" height="1744" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.4974093" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27066666" sideWeight="0.48704663" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27066666" sideWeight="0.4857513" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998705" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.4974093" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -454,13 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/flutter/packages/flutter/lib/src/animation/listener_helpers.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="129" column="37" lean-forward="false" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/flutter/packages/flutter/lib/src/animation/animation_controller.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -820,19 +821,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/order_layout.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/delivering_from_layout.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        <state relative-caret-position="378">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/user_home_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="63" column="46" lean-forward="false" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="-84">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

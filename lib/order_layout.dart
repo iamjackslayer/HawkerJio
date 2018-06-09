@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-class DeliveringFromLayout extends StatelessWidget {
+class OrderLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-        margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 53.0),
-        padding: new EdgeInsets.only(top: 5.0, bottom: 5.0),
+        margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 10.0),
         decoration: new BoxDecoration(
           color: Colors.white,
           borderRadius: new BorderRadius.all(const Radius.circular(20.0)),
@@ -19,6 +18,14 @@ class DeliveringFromLayout extends StatelessWidget {
                   padding: new EdgeInsets.fromLTRB(15.0, 5.0, 10.0, 0.0),
                   child:new Icon(Icons.free_breakfast),
                 ),
+                new Padding(
+                  padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 0.0),
+                  child:new Icon(Icons.more_vert),
+                ),
+                new Padding(
+                  padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 5.0),
+                  child:new Icon(Icons.free_breakfast),
+                ),
               ],
             ),
             new Column(
@@ -27,7 +34,7 @@ class DeliveringFromLayout extends StatelessWidget {
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    new Text("Delivering from: ",
+                    new Text("From: ",
                       style: new TextStyle(
                           fontSize: 17.0,
                           fontWeight: FontWeight.bold
@@ -36,8 +43,22 @@ class DeliveringFromLayout extends StatelessWidget {
                   ],
                 ),
                 // This is horizontal divider
-
-
+                new Container(
+                  margin: new EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                  width: 220.0,
+                  height: 2.0,
+                  color: Colors.black12,
+                ),
+                new Row(
+                  children: <Widget>[
+                    new Text("To:",
+                        style: new TextStyle(
+                            fontSize: 17.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    )
+                  ],
+                )
               ],
             )
           ],
