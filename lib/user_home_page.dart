@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'my_button.dart';
+import 'delivering_from_layout.dart';
 
 /*
 * This is the first page a signed in user sees when opening the app.
@@ -17,6 +17,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
 
   Color _orderButtonColor;
   Color _deliverButtonColor;
+  Widget _centerLayout;
 
   @override
   void initState() {
@@ -43,6 +44,8 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                             ),
                           ),
                         ),
+
+                        // The center layout when orderbutton is selected.
                         new Container(
                           margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 10.0),
                           decoration: new BoxDecoration(
@@ -82,6 +85,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                                       )
                                     ],
                                   ),
+                                  // This is horizontal divider
                                   new Container(
                                     margin: new EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
                                     width: 220.0,
@@ -165,7 +169,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
 
                        // Button that navigates to another route
                         new Container(
-                          margin: new EdgeInsets.only(top: 200.0),
+                          margin: new EdgeInsets.only(top: 200.0  ),
                           child: new FlatButton(
                             onPressed: (){
                               if (_orderButtonColor == Colors.pink) {
