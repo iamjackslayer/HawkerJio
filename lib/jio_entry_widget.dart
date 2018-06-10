@@ -17,20 +17,62 @@ class JioEntryWidget extends StatefulWidget {
 class _JioEntryWidgetState extends State<JioEntryWidget> {
   @override
   Widget build(BuildContext context) {
-    return new ExpansionTile(
-      title: new Text("${widget.jioEntry.hawkerName} (closing in ${new DateTime.now().difference(widget.jioEntry.closingTime).inMinutes} mins)"),
-
-      children: <Widget>[
-        new ListTile(
-          title: new Text("Pick up pt: ${widget.jioEntry.pickupPoint}"),
+    return new Container(
+      margin: new EdgeInsets.only(top: 5.0, bottom: 5.0),
+      color: Colors.white,
+      child: new ExpansionTile(
+        backgroundColor: Colors.white,
+        title: new Container(
+          child: new Row(
+            children: <Widget>[
+              // This is the left item - the name of deliverer
+              new Container(
+                width: 200.0,
+                child: new Text("Pakorn",
+                  style: new TextStyle(
+                      fontSize: 20.0
+                  ),
+                ),
+              ),
+              // This is the right items - the closing time, eta, num of dishes
+              new Row(
+                children: <Widget>[
+                  new Column(
+                    children: <Widget>[
+                      new Text("25",
+                        style: new TextStyle(
+                            fontSize: 20.0
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
         ),
-        new ListTile(
-          title: new Text("ETA: ${widget.jioEntry.eta.hour}:${widget.jioEntry.eta.minute}"),
-        ),
-        new ListTile(
-          title: new Text("Jio created by ${widget.jioEntry.jioCreator}"),
-        )
-      ],
+       
+//      new Text("${widget.jioEntry.hawkerName} (closing in ${new DateTime.now().difference(widget.jioEntry.closingTime).inMinutes} mins)")
+//        children: <Widget>[
+//          new ListTile(
+//            title: new Text("Pick up pt: ${widget.jioEntry.pickupPoint}"),
+//          ),
+//          new ListTile(
+//            title: new Text("ETA: ${widget.jioEntry.eta.hour}:${widget.jioEntry.eta.minute}"),
+//          ),
+//          new ListTile(
+//            title: new Text("Jio created by ${widget.jioEntry.jioCreator}"),
+//          )
+//        ],
+        // The items to display when the tile expands
+        children: <Widget>[
+          new Column(
+            children: <Widget>[
+              new Text("Pick up location: Cafe Agora(Yale-Nus)"),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
