@@ -18,7 +18,7 @@ class _JioListPageState extends State<JioListPage> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Center(child: new Text('Available jios near you!' )),
-        automaticallyImplyLeading: false, // No leading icon
+        //automaticallyImplyLeading: false, // No leading icon
       ),
       body: new Center(
         child:  new StreamBuilder(
