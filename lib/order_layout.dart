@@ -7,7 +7,7 @@ class OrderLayout extends StatelessWidget {
         margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 10.0),
         decoration: new BoxDecoration(
           color: Colors.white,
-          borderRadius: new BorderRadius.all(const Radius.circular(20.0)),
+          borderRadius: new BorderRadius.all(const Radius.circular(15.0)),
         ),
 
         child: new Row(
@@ -16,7 +16,7 @@ class OrderLayout extends StatelessWidget {
               children: <Widget>[
                 new Padding(
                   padding: new EdgeInsets.fromLTRB(15.0, 5.0, 10.0, 0.0),
-                  child:new Icon(Icons.free_breakfast),
+                  child:new Icon(Icons.restaurant),
                 ),
                 new Padding(
                   padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 0.0),
@@ -24,7 +24,7 @@ class OrderLayout extends StatelessWidget {
                 ),
                 new Padding(
                   padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 5.0),
-                  child:new Icon(Icons.free_breakfast),
+                  child:new Icon(Icons.place),
                 ),
               ],
             ),

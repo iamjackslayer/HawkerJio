@@ -4,11 +4,11 @@ class DeliveringFromLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-        margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 53.0),
-        padding: new EdgeInsets.only(top: 5.0, bottom: 5.0),
+        margin: new EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 56.0),
+        padding: new EdgeInsets.only(top: 6.0, bottom: 6.0),
         decoration: new BoxDecoration(
           color: Colors.white,
-          borderRadius: new BorderRadius.all(const Radius.circular(20.0)),
+          borderRadius: new BorderRadius.all(const Radius.circular(15.0)),
         ),
 
         child: new Row(
@@ -16,8 +16,8 @@ class DeliveringFromLayout extends StatelessWidget {
             new Column(
               children: <Widget>[
                 new Padding(
-                  padding: new EdgeInsets.fromLTRB(15.0, 5.0, 10.0, 0.0),
-                  child:new Icon(Icons.free_breakfast),
+                  padding: new EdgeInsets.fromLTRB(15.0, 0.0, 10.0, 0.0),
+                  child:new Icon(Icons.restaurant),
                 ),
               ],
             ),
