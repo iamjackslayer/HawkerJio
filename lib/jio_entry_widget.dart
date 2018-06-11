@@ -96,7 +96,7 @@ class PlaceOrderButton extends StatelessWidget {
     return new FlatButton(
         padding: new EdgeInsets.all(0.0),
         onPressed: () {
-
+          Navigator.pushNamed(context, '/PlaceOrderPage');
         },
         child: new Container(
           padding: new EdgeInsets.all(8.0),
