@@ -69,10 +69,43 @@ class _JioEntryWidgetState extends State<JioEntryWidget> {
           new Column(
             children: <Widget>[
               new Text("Pick up location: Cafe Agora(Yale-Nus)"),
+
+              // This container holds only the place order button
+              new Container(
+                margin: new EdgeInsets.only(top: 50.0, bottom: 10.0, right: 15.0),
+                child: new Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    new PlaceOrderButton(), // custom button, defined below this class.
+                  ],
+                ),
+              )
             ],
           )
         ],
       ),
+    );
+  }
+}
+
+
+// This class constructs a 'place order' button in each expansion Tile
+class PlaceOrderButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new FlatButton(
+        padding: new EdgeInsets.all(0.0),
+        onPressed: () {
+
+        },
+        child: new Container(
+          padding: new EdgeInsets.all(8.0),
+          decoration: new BoxDecoration(
+              border: new Border.all(color: new Color(0xFFEBEBEB),width: 1.8),
+              borderRadius: new BorderRadius.all(new Radius.circular(10.0))
+          ),
+          child: new Text("Place order"),
+        )
     );
   }
 }
