@@ -89,9 +89,6 @@ class _SignUpPageState extends State<SignUpPage> {
                 // Confirm button
                 new InkWell(
                   onTap: () {
-//                    if (_formKey.currentState.validate()) {
-//                      Navigator.pushNamed(context, '/UserHomePage');
-//                    }
                     Navigator.pushNamed(context, '/UserHomePage');
                   },
                   child: new MyButton('Confirm'),

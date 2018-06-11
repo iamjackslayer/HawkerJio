@@ -9,12 +9,23 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.0 #new
 
+  # The following adds firebase functionalities to the application
   cloud_firestore: ^0.7.0 # new
   intl: 0.15.6 #new
+  firebase_auth: "^0.5.11"
+
+  # The following adds Google authentication feature to the application
+  google_sign_in: "^3.0.4"
+
+  # The following adds packages used to implement redux architecture
+  redux: "^3.0.0"
+  flutter_redux: "^0.5.1"
+  redux_thunk: "^0.2.0"
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 
 # For information on the generic Dart part of this file, see the

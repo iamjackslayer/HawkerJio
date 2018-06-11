@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'jio_entry_widget.dart';
-import 'jio_entry.dart';
+import 'core.dart';
 
 /*
 This is the page directed when the user wants to see any available food delivery services.

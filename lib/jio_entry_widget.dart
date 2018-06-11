@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'jio_entry.dart';
+import 'core.dart';
 
 /*This class is widget class wrapping the JioEntry obj. The resulting widget is what is gonna
 * be displayed onto our jio list page.
