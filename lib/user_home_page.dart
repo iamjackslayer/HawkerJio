@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'my_button.dart';
-
+import 'core.dart';
+import 'Actions/AuthenticationActions.dart';
+import 'dart:async';
 /*
 * This is the first page a signed in user sees when opening the app.
 * It has two big buttons, 1) letting user to choose whether to deliver food for others
@@ -166,16 +168,18 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                        // Button that navigates to another route
                         new Container(
                           margin: new EdgeInsets.only(top: 200.0),
-                          child: new FlatButton(
-                            onPressed: (){
-                              if (_orderButtonColor == Colors.pink) {
-                                Navigator.pushNamed(context, "/JioListPage");
-                              } else if (_deliverButtonColor == Colors.pink) {
-
+                          child: new StoreConnector<AppState,VoidCallback>(
+                            converter: (store) => () {
+                              store.dispatch(LogoutAction);
+                              if(store.state.currentAppStatus == AppStatusFlags.unauthenticated) {
+                                Navigator.pushNamed(context, '/');
                               }
-                            },
-                            child: new Icon(Icons.arrow_forward_ios),
-
+                            }, 
+                            builder: (context,callback){
+                              return new RaisedButton(
+                                onPressed: callback,
+                              ); 
+                            }
                           ),
                           decoration: new BoxDecoration(
                             borderRadius: new BorderRadius.all(const Radius.circular(18.0)),

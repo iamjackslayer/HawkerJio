@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'welcome_page.dart';
+import 'home_page.dart';
 import 'sign_up_page.dart';
 import 'user_home_page.dart';
 import 'jio_list_page.dart';
 import 'create_jio_page.dart';
 import 'core.dart';
+import 'sign_in_page.dart';
 
 
 
@@ -18,6 +19,15 @@ void main() {
   runApp(new MyApp(
     store: store,
   ));
+}
+
+Widget defaultPage(AppStatusFlags flag) {
+  switch (flag) {
+    case AppStatusFlags.unauthenticated:
+      return new SignInPage();
+    case AppStatusFlags.authenticated:
+      return new UserHomePage();
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -35,7 +45,7 @@ class MyApp extends StatelessWidget {
         theme: new ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: new WelcomePage(),
+        home: new HomePage(),
         routes: <String, WidgetBuilder> {
           "/SignUpPage" : (BuildContext context) => new SignUpPage(),
           "/UserHomePage" : (BuildContext context) => new UserHomePage(),

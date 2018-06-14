@@ -1,4 +1,4 @@
-import 'package:hawker_jio_app/States/AppUser.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthenticationAction {
 
@@ -17,7 +17,7 @@ class AuthenticateWithGoogleAction extends AuthenticationAction {
 }
 
 class LoginAction extends AuthenticationAction {
-  final AppUser user;
+  final FirebaseUser user;
 
   LoginAction(this.user);
 

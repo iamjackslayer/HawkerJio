@@ -6,7 +6,7 @@ import 'core.dart';
 * We wrap it in an Expansion tile.
 * */
 class JioEntryWidget extends StatefulWidget {
-  final JioEntry jioEntry;
+  final OrderMetadata jioEntry;
 
   JioEntryWidget(this.jioEntry);
 

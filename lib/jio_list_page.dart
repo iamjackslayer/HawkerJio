@@ -31,7 +31,7 @@ class _JioListPageState extends State<JioListPage> {
                 itemCount: snapshot.data.documents.length,
                 itemBuilder: (context, index){
 
-                  JioEntry entry = new JioEntry(
+                  OrderMetadata entry = new OrderMetadata(
                     hawkerName: snapshot.data.documents[index]['hawker_name'],
                     pickupPoint: snapshot.data.documents[index]['pickup_pt'],
                     closingTime: snapshot.data.documents[index]['closing_time'],

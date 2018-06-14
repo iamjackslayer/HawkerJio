@@ -5,15 +5,19 @@ import 'package:hawker_jio_app/Actions/AuthenticationActions.dart';
 import 'package:hawker_jio_app/core.dart';
 
   final authenticateWithGoogle = (Store<AppState> store) async {
-    LoginAction login = new LoginAction(await _authenticate());
-    if (login.isSuccessful() == true) {
-      store.dispatch(login);
-    } else {
-      print('Login failed');
+    try {
+      LoginAction login = new LoginAction(await _handleGoogleSignIn());
+      if (!login.isSuccessful()) {
+        throw new Exception('Login Failed');
+      } else {
+        store.dispatch(LoginAction);
+      }
+    } catch (error) {
+      print(error);
     }
   };
 
-  Future<FirebaseUser> _handleSignIn() async {
+  Future<FirebaseUser> _handleGoogleSignIn() async {
     final FirebaseAuth _auth = FirebaseAuth.instance;
     GoogleSignIn _googleSignIn = new GoogleSignIn(
       scopes: [
@@ -31,17 +35,6 @@ import 'package:hawker_jio_app/core.dart';
     return user;
   }
 
-  Future<AppUser> _authenticate() async {
-    try {
-      final FirebaseUser googleUser = await _handleSignIn();
-      if (googleUser != null) {
-        return new AppUser(googleUser.displayName, googleUser.email, googleUser.uid);
-      } else {
-        print('Login Failed');
-        return null;
-      }
-    } catch(error) {
-      print(error);
-      return null;
-    }
-  }
+  // Future<void> _handleGoogleSignOut() async {
+  //   final FirebaseAuth _auth = FirebaseAuth.instance;
+  // }
