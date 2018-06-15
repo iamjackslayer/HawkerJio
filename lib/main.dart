@@ -4,6 +4,7 @@ import 'sign_up_page.dart';
 import 'user_home_page.dart';
 import 'jio_list_page.dart';
 import 'create_jio_page.dart';
+import 'place_order_page.dart';
 
 void main() => runApp(new MyApp());
 
@@ -28,8 +29,9 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         "/SignUpPage" : (BuildContext context) => new SignUpPage(),
         "/UserHomePage" : (BuildContext context) => new UserHomePage(),
-        '/JioListPage' : (BuildContext context) => new JioListPage(),
+        "/JioListPage" : (BuildContext context) => new JioListPage(),
         "/CreateJioPage" : (BuildContext context) => new CreateJioPage(),
+        "/PlaceOrderPage" : (BuildContext context) => new PlaceOrderPage(),
       },
     );
   }

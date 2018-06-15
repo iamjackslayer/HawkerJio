@@ -24,7 +24,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
   @override
   void initState() {
     super.initState();
-    _orderButtonColor = new Color(0xFFDF1B01);
+    _orderButtonColor = new Color(0xFFDF1B01); // Red
     _deliverButtonColor = Colors.white;
 
     _centerLayout = new OrderLayout();
@@ -59,7 +59,7 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                             'Hawker Jio',
                             style: new TextStyle(
                               fontSize: 50.0,
-                              fontFamily: "Indie Flower", // Just a temporary fontfamily
+                              fontFamily: "Indie Flower", // Just a dummy fontfamily
                               color: new Color(0xFFDF1B01),
                             ),
 
@@ -143,9 +143,9 @@ class _UserHomePageState extends State<UserHomePage> with SingleTickerProviderSt
                           margin: new EdgeInsets.only(top: 150.0  ),
                           child: new FlatButton(
                             onPressed: (){
-                              if (_orderButtonColor == Colors.pink) {
+                              if (_orderButtonColor == new Color(0xFFDF1B01)) {
                                 Navigator.pushNamed(context, "/JioListPage");
-                              } else if (_deliverButtonColor == Colors.pink) {
+                              } else if (_deliverButtonColor == new Color(0xFFDF1B01)) {
 
                               }
                             },
