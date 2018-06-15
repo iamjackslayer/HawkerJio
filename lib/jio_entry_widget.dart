@@ -30,7 +30,7 @@ class _JioEntryWidgetState extends State<JioEntryWidget> {
                 width: 200.0,
                 child: new Text("Pakorn",
                   style: new TextStyle(
-                      fontSize: 20.0
+                      fontSize: 20.0,
                   ),
                 ),
               ),
